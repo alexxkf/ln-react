@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 class User extends React.Component {
@@ -20,7 +19,9 @@ class User extends React.Component {
         <h3>List of Users:</h3>
         <ul>
           {this.state.users.map(user => (
-            <li key={user.firstName}>{user.lastName}</li>
+            <li key={user.id}>
+              {user.lastName}, {user.firstName}
+            </li>
           ))}
         </ul>
       </div>
