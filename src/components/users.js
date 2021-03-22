@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 class User extends React.Component {
   state = {
@@ -28,5 +29,10 @@ class User extends React.Component {
     );
   }
 }
+
+//should use proptypes to validate the information that is coming in
+User.propTypes = {
+  users: PropTypes.string
+};
 
 export default User;
