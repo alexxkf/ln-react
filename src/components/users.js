@@ -30,7 +30,6 @@ class User extends React.Component {
   }
 }
 
-//should use proptypes to validate the information that is coming in
 User.propTypes = {
   users: PropTypes.string
 };
